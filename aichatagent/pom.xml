@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://apache.org"
-		 xmlns:xsi="http://w3.org"
-		 xsi:schemaLocation="http://apache.org https://apache.org">
+<project>
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
