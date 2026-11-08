@@ -3,6 +3,7 @@ package com.genai.java.spring.Config;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.anthropic.AnthropicChatModel;
 import org.springframework.ai.huggingface.HuggingfaceChatModel;
+import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,5 +18,10 @@ public class AIChatProviderConfig {
     @Bean("huggingfaceChatClient")
     ChatClient huggingFaceChatClient(HuggingfaceChatModel huggingfaceChatModel) {
         return ChatClient.builder(huggingfaceChatModel).build();
+    }
+
+    @Bean("ollamaChatClient")
+    ChatClient ollamaChatClient(OllamaChatModel ollamaChatModel) {
+        return ChatClient.builder(ollamaChatModel).build();
     }
 }
