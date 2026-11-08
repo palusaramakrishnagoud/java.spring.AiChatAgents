@@ -1,8 +1,6 @@
 # AI Chat Agent
 
-Spring Boot service that uses [Spring AI](https://docs.spring.io/spring-ai/reference/) with Anthropic Claude to summarize messages and meeting notes over HTTP.
-
-The application lives in the `aichatagent/` Maven module.
+Spring Boot service that uses [Spring AI](https://docs.spring.io/spring-ai/reference/) with LLM providers for interaction.
 
 ## Stack
 
@@ -12,7 +10,7 @@ The application lives in the `aichatagent/` Maven module.
 - Apache HttpClient 5 (used by `AIChatService` for a direct Anthropic HTTP client)
 - Maven Wrapper
 
-Default model: `claude-haiku-4-5`  
+Default model: claude-haiku-4-5( Anthropic), mistral:7b (Ollama)  
 Default port: `8081`
 
 ## Prerequisites
