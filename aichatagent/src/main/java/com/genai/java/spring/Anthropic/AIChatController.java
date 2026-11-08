@@ -1,7 +1,5 @@
-package com.genai.java.spring.Controller;
+package com.genai.java.spring.Anthropic;
 
-import org.springframework.ai.anthropic.AnthropicChatOptions;
-import org.springframework.ai.anthropic.api.AnthropicApi;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/anthropicai/chat")
 public class AIChatController {
 
-    private final static String DEFAULT_SYSTEM_PROMPT = "Your helpful."
+    private final static String DEFAULT_SYSTEM_PROMPT = "Give a summary first in three to four lines."
             + "Make sure its concise informative and capture all the key points.";
 
     private final ChatClient chatClient;

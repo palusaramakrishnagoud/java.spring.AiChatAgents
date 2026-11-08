@@ -1,4 +1,4 @@
-package com.genai.java.spring.AIChatExceptions;
+package com.genai.java.spring.Anthropic;
 
 public class AIChatException extends RuntimeException {
     public AIChatException(String message) {
